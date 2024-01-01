@@ -14,13 +14,16 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install PlantUML
-        run: sudo apt-get install plantuml
+        run: |
+          sudo apt-get install plantuml
+          sudo apt-get install tree
 
       - name: Render PlantUML diagrams
         run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml -o vehicle-truck-passengercar-cld.svg
 
       - name: Push generated image
         run: |
+          tree
           mv plantuml/vehicle-truck-passengercar-cld.svg images/
           cd images
           ls -lah
