@@ -20,4 +20,4 @@ jobs:
         run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml -o vehicle-truck-passengercar-cld.svg
 
       - name: Save generated image
-        run: vehicle-truck-passengercar-cld.svg images/vehicle-truck-passengercar-cld.svg
+        run: mv vehicle-truck-passengercar-cld.svg images/vehicle-truck-passengercar-cld.svg
