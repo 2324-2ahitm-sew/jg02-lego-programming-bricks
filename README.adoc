@@ -344,7 +344,7 @@ endif::[]
 
 
 
-=== Erstellen von Pfaden
+==== Erstellen von Pfaden
 
 * files.Bsp005: Erstelle ein Pfad-Objekt das auf die `pom.xml` im Root des Projektfolders verweist. Anschließend wird die `pom.xml` in einen existierenden Folder `files` kopiert und in `pom-copy.xml` umbenannt.
 
@@ -386,8 +386,8 @@ include::{sourcedir}/files/Bsp005.java[tag=solution,indent=0]
 
 === Objektorientierung Grundlagen
 
-* OOFundBsp01:
-Erstellen Sie eine Klasse `Vehicle` sowie zwei Unterklassen `Truck` and `PassengerCar` mit folgenden Attributen:
+* Bsp001:
+Erstellen Sie eine abstrakte Klasse `Vehicle` sowie zwei Unterklassen `Truck` and `PassengerCar` mit folgenden Attributen:
 ** `Vehicle`
 *** brand
 *** model
@@ -397,6 +397,8 @@ Erstellen Sie eine Klasse `Vehicle` sowie zwei Unterklassen `Truck` and `Passeng
 
 ** `PassengerCar`
 *** maxPassengers
+
+
 
 ifdef::env-github[]
 image::vehicle-truck-passengercar-cld.svg[]
@@ -411,9 +413,25 @@ include::plantuml/vehicle-truck-passengercar-cld.puml[]
 ----
 endif::[]
 
+** Erstellen Sie eine Klasse `Main` mit einer `main`-Methode, in der Sie jeweils zwei Objekte der Klasse `Truck` und `PassengerCar` erzeugen und in einem Vehicle-Array speichern.
 
+** Anschließend durchlaufen sie das Array und geben die toString()-Methode der einzelnen Objekte aus.
 
+** Durchlaufen Sie das Array erneut und geben Sie die jeweils aus, welche Art von Objekt es ist (Truck oder PassengerCar).
 
+** Bildschirmausgabe:
++
+----
+Opel Blitz (max. 3000 kg Nutzlast)
+Steyr 480 (max. 5000 kg Nutzlast)
+VW Käfer (4 Seats)
+Volvo Sport P1900 (2 Seats)
+
+Truck
+Truck
+PassengerCar
+PassengerCar
+----
 
 
 

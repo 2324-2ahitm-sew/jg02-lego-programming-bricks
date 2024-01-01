@@ -1,16 +1,21 @@
 @startuml
+left to right direction
 
-class Vehicle {
+abstract class Vehicle {
   - brand: String
   - model: String
 }
 
 class Truck {
   - maxPayload: int
+  + Truck(String model, String brand, int maxPayload)
+  + toString(): String
 }
 
 class PassengerCar {
   - maxPassengers: int
+  + PassengerCar(String brand, String model, int maxPassengers)
+    + toString(): String
 }
 
 Vehicle <|-- Truck
