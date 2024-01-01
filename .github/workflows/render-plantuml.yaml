@@ -21,7 +21,7 @@ jobs:
 
       - name: Push generated image
         run: |
-          mv vehicle-truck-passengercar-cld.svg images/
+          mv plantuml/vehicle-truck-passengercar-cld.svg images/
           cd images
           ls -lah
           git add vehicle-truck-passengercar-cld.svg
