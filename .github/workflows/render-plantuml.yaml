@@ -24,6 +24,8 @@ jobs:
           mv plantuml/vehicle-truck-passengercar-cld.svg images/
           cd images
           ls -lah
+          git config --global user.name 'htl-leonding'
+          git config --global user.email 't.stuetz@htl-leonding.ac.at'
           git add vehicle-truck-passengercar-cld.svg
           git commit -m "Update generated image"
           git push origin main
