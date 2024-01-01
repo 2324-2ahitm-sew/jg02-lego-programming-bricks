@@ -413,8 +413,8 @@ endif::[]
 
 
 
-////
-
+++++
+<!--
 @startuml my-cld
 
 class Vehicle {
@@ -434,7 +434,8 @@ Vehicle <|-- Truck
 Vehicle <|-- PassengerCar
 
 @enduml
-////
+-->
+++++
 
 image::my-cld.svg[]
 
