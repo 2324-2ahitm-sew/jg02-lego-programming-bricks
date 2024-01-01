@@ -435,7 +435,11 @@ Vehicle <|-- PassengerCar
 
 @enduml
 -->
-![](my-cld.svg)
+<div class="imageblock">
+<div class="content">
+<img src="my-cld.svg" alt="Company Logo">
+</div>
+</div>
 ++++
 
 
