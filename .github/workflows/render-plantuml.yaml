@@ -17,7 +17,7 @@ jobs:
         run: sudo apt-get install plantuml
 
       - name: Render PlantUML diagrams
-        run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml -o images/vehicle-truck-passengercar-cld.svg
+        run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml -o vehicle-truck-passengercar-cld.svg
 
       - name: Push generated image
         run: |
