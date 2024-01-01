@@ -391,7 +391,6 @@ Erstellen Sie eine Klasse `Vehicle` sowie zwei Unterklassen `Truck` and `Passeng
 ** `Vehicle`
 *** brand
 *** model
-*** maxSpeed
 
 ** `Truck`
 *** maxPayload
@@ -414,9 +413,30 @@ endif::[]
 
 
 
+////
 
+@startuml my-cld
 
+class Vehicle {
+  - brand: String
+  - model: String
+}
 
+class Truck {
+  - maxPayload: int
+}
+
+class PassengerCar {
+  - maxPassengers: int
+}
+
+Vehicle <|-- Truck
+Vehicle <|-- PassengerCar
+
+@enduml
+////
+
+image::my-cld.svg[]
 
 
 
