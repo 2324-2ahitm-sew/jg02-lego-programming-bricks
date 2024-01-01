@@ -5,3 +5,4 @@ db/
 .DS_Store
 *.jar
 README.html
+.env

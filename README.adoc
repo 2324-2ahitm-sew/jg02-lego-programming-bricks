@@ -435,9 +435,9 @@ Vehicle <|-- PassengerCar
 
 @enduml
 -->
+![](my-cld.svg)
 ++++
 
-image::my-cld.svg[]
 
 
 
