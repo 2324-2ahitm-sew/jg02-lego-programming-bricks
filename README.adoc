@@ -221,6 +221,7 @@ TIP: Siehe die Folie "Einlesen von Textdateien"
 10:Franz;Gans
 ----
 +
+ifndef::env-github[]
 .Lösung
 [%collapsible]
 ====
@@ -229,6 +230,7 @@ TIP: Siehe die Folie "Einlesen von Textdateien"
 include::{sourcedir}/files/Bsp001.java[tag=solution,indent=0]
 ----
 ====
+endif::[]
 
 '''
 
@@ -270,6 +272,7 @@ CAUTION: Die Anzahl der Zeilen ist nicht bekannt!
 10:Franz;Gans
 ----
 +
+ifndef::env-github[]
 .Lösung
 [%collapsible]
 ====
@@ -279,6 +282,7 @@ include::{sourcedir}/files/Bsp002.java[tag=solution,indent=0]
 ----
 
 ====
+endif::[]
 
 '''
 
@@ -294,6 +298,7 @@ include::{sourcedir}/files/Bsp002.java[tag=solution,indent=0]
 Wrote 10 lines to file 'my-file.txt'
 ----
 +
+ifndef::env-github[]
 .Lösung
 [%collapsible]
 ====
@@ -303,7 +308,7 @@ include::{sourcedir}/files/Bsp003.java[tag=solution,indent=0]
 ----
 
 ====
-
+endif::[]
 
 
 
@@ -321,6 +326,7 @@ include::{sourcedir}/files/Bsp003.java[tag=solution,indent=0]
 Wrote 10 lines to file 'my-file.txt'
 ----
 +
+ifndef::env-github[]
 .Lösung
 [%collapsible]
 ====
@@ -330,7 +336,9 @@ include::{sourcedir}/files/Bsp004.java[tag=solution,indent=0]
 ----
 
 ====
+endif::[]
 
+'''
 
 
 
