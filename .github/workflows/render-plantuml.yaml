@@ -19,7 +19,7 @@ jobs:
           sudo apt-get install tree
 
       - name: Render PlantUML diagrams
-        run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml -o vehicle-truck-passengercar-cld.svg
+        run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml
 
       - name: Push generated image
         run: |
