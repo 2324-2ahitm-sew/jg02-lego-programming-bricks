@@ -1,0 +1,444 @@
+= Übung Lego-Programmier-Bausteine
+Thomas Stütz
+1.0.0, {docdate}
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: src/main/java/at/htl/lego/solution]
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+// :toc:
+// :toclevels: 1
+:experimental:
+//https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74?permalink_comment_id=3948218
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+[discrete]
+== Lehrziel
+
+* grundlegende Skills für Programmieren in Java
+
+== Motivation
+
+* Dies ist der Versuch die grundlegenden Skills fürs Programmieren in Form von kleinen Beispielen vorzugeben.
+* Jede dieser kleinen Applikationen deckt eine Funktion ab, die häufig bei komplexeren Programmen verwendet wird.
+* Wenn man diese Beispiele durcharbeitet, sollten die Schüler:innen diese Funktionalitäten wie Lego Bausteine zu einer komplexeren Applikation zusammenfügen können.
+
+== Anleitung
+
+* Installiere Dir das asciidoctor und das plantuml-plugin.
++
+image:asciidoc-plugin.png[]
+image:plantuml-plugin.png[]
+* Es sind teilweise die Musterlösungen enthalten. *Versuche zuerst die Beispiele alleine - ohne Musterlösung - zu erarbeiten*. Wenn das nicht gelingt, schau in der Musterlösung nach.
+* Speichere Deine Lösungen in das `student`-Package. Die Musterlösungen werden (falls verfügbar) in das `solution`-package kopiert.
+* Erstelle für jedes Beispiel eine Klasse zb die Klasse `Bsp01`. Die main-Methode in dieser Klasse ruft die jeweilige Methode auf. Diese soll einen sprechenden Bezeichner haben:
+
+.Beispielscode
+[%collapsible]
+====
+[source,java]
+----
+public class CharBsp01 {
+
+    public static void main(String[] args) {
+
+        System.out.println(toUpperCase('b'));
+
+    }
+
+    /**
+     * Konvertiere einen Kleinbuchstaben in einen Großbuchstaben: 'a' -> 'A'.
+     * Berechne dies mit dem Asciicode.
+     *
+     * @param c ... Kleinbuchstabe
+     * @return Großbuchstaben
+     */
+    static char toUpperCase(char c) {
+
+        if (c >= 'a' && c <= 'z') {
+            return (char) (c - ('a' - 'A'));
+        }
+        return c;
+
+    }
+
+}
+----
+
+.Bildschirmausgabe
+----
+B
+----
+====
+
+* Updaten der Angaben / der Musterlösungen
+
+** Wenn man sich dieses Repository bereits auf den eigenen Rechner gecloned hat möchte man vielleicht neue Beispielsangaben herunterladen, dh man möchte das lokale Repo aktualisieren, ohne die eigenen Beispiele zu verlieren
+
+** Seit 1. Jänner 2024 wurde die Funktionsweise von github-classroom geändert. Die Repos für die Schüler werden nun nicht mehr aus einem Template-Repo erstellt, sondern aus einem Fork des Repos.
+
+** Dieser Fork kann nun einfacher mit dem Original-Repo synchronisiert werden -> https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork[GitHub-Dokumentation - Einen Fork synchronisieren^]
+
+
+== Lego-Programmier-Bausteine
+
+IMPORTANT: Methoden wie `.toUpperCase()`, `.toLowerCase()`, `Double.parseDouble()`, `.split()` ... dürfen verwendet werden, sofern nicht anders angegeben.
+
+
+=== Files
+
+.Grundlagen
+[%collapsible]
+====
+The best way to read a text file in Java depends on the specific requirements of your application. However, the three most common and recommended approaches are:
+
+1. **Using the Files class:** The Files class provides methods for reading entire files into a byte array or a list of lines. This is a straightforward approach that is suitable for small to medium-sized files. However, it is not recommended for large files, as it can load the entire file into memory.
+
+2. **Using the BufferedReader class:** The BufferedReader class reads text from a character-input stream, buffering characters so as to read them more efficiently. This is a good choice for reading large files line by line, as it reads the file incrementally and does not load the entire file into memory.
+
+3. **Using the Scanner class:** The Scanner class is a general-purpose input class that can be used to read text from various sources, including files. It supports different delimiters, allowing you to read text based on specific characters or patterns. This is useful for reading files with specific formatting or structures.
+
+Here's a summary of the pros and cons of each approach:
+
+* **Files:**
+
+** Pros: Simple to use, suitable for small to medium-sized files.
+
+** Cons: Not recommended for large files, can load the entire file into memory.
+
+* **BufferedReader:**
+
+** Pros: Efficient for reading large files line by line.
+
+** Cons: More complex to use than Files.
+
+* **Scanner:**
+
+** Pros: Supports various delimiters, versatile for reading structured files.
+
+** Cons: More complex to use than Files, not as efficient for large files.
+
+In general, if you need to read a small to medium-sized file in its entirety, using the Files class is the simplest and most efficient approach. For large files, using the BufferedReader class is recommended to avoid loading the entire file into memory. And if you need to read files with specific formatting or structures, using the Scanner class can be more efficient and flexible.
+source: https://howtodoinjava.com/java/io/java-write-to-file/[Java Write to File: Clean Code vs. Performance^]
+
+* Weitere Beispiele
+** http://tutego.de/javabuch/aufgaben/io.html[Dateien und wahlfreier Zugriff auf Dateiinhalte^]
+====
+
+.https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/package-summary.html[Java SE 21 API Specification^]
+|===
+|Klasse |Zweck
+
+|InputStream
+|Lesen von Bytes
+
+|OutputStream
+|Schreiben von Bytes
+
+|Reader
+|Lesen von Zeichen
+
+|Writer
+|Schreiben von Zeichen
+
+|BufferedReader
+|Lesen von Zeichen, Arrays und Zeilen mit Pufferung
+
+|BufferedWriter
+|Schreiben von Zeichen, Arrays und Zeilen mit Pufferung
+
+|StringReader
+|Lesen von Zeichen aus einem String
+
+|StringWriter
+|Schreiben von Zeichen in einen String
+
+|FileReader
+|Lesen von Zeichen aus einer Datei
+
+|FileWriter
+|Schreiben von Zeichen in eine Datei
+
+|Printer
+|Schreiben von formatierten Zeichen (High-Level-Klasse)
+|===
+
+
+* Es wird empfohlen zum Erstellen eines FileReaders oder FileWriters nicht eine Instanz mit `new FileReader(...)` zu verwenden sondern die Klasse `Files` mit seinen statischen new...-Methoden zu verwenden (Factory-Pattern)
++
+[source,java]
+----
+Files.newInputStream(
+         Paths.get(fileName)
+       ), StandardCharsets.UTF_8)
+----
++
+Damit ist man vom lokalen Filesystem unabhängig und kann auf verschiedene Filesysteme zugreifen, wie zB auf das Dropbox-Filesystem https://github.com/fge/java7-fs-dropbox#usage[java-fs-dropbox^].
+
+
+'''
+
+* files.Bsp001: Gegeben ist eine Datei `duck-names.txt` mit folgendem Inhalt:
++
+----
+Donald;Duck
+Dagobert;Duck
+Tick;Duck
+Trick;Duck
+Track;Duck
+Daisy;Duck
+Gustav;Duck
+Dussel;Duck
+Oma Dorette;Duck
+Franz;Gans
+----
+
+** Erstelle eine Java-Klasse `Bsp001.java` im package `at.htl.lego.solution.files`.
+
+** Erstelle eine Methode `readTextFile` die den Inhalt der Datei in einen *String* einliest und diesen zurückgibt.
++
+TIP: Siehe die Folie "Einlesen von Textdateien"
+
+** In der main Methode wird dieser String zeilenweise durchlaufen und in der Console ausgegeben. Dabei werden die Zeilen nummeriert.
++
+** Bildschirmausgabe:
++
+----
+ 1:Donald;Duck
+ 2:Dagobert;Duck
+ 3:Tick;Duck
+ 4:Trick;Duck
+ 5:Track;Duck
+ 6:Daisy;Duck
+ 7:Gustav;Duck
+ 8:Dussel;Duck
+ 9:Oma Dorette;Duck
+10:Franz;Gans
+----
++
+.Lösung
+[%collapsible]
+====
+[source,java]
+----
+include::{sourcedir}/files/Bsp001.java[tag=solution,indent=0]
+----
+====
+
+'''
+
+* files.Bsp002: Gegeben ist eine Datei `duck-names.txt` mit folgendem Inhalt:
++
+----
+Donald;Duck
+Dagobert;Duck
+Tick;Duck
+Trick;Duck
+Track;Duck
+Daisy;Duck
+Gustav;Duck
+Dussel;Duck
+Oma Dorette;Duck
+Franz;Gans
+----
+
+** Erstelle eine Java-Klasse `Bsp002.java` im package `at.htl.lego.solution.files`.
+
+** Erstelle eine Methode `readTextFile` die den Inhalt der Datei in ein *String-Array* einliest und dieses zurückgibt.
++
+CAUTION: Die Anzahl der Zeilen ist nicht bekannt!
+
+** In der main Methode wird dieser String zeilenweise durchlaufen und in der Console ausgegeben. Dabei werden die Zeilen nummeriert.
+
+** Bildschirmausgabe:
++
+----
+ 1:Donald;Duck
+ 2:Dagobert;Duck
+ 3:Tick;Duck
+ 4:Trick;Duck
+ 5:Track;Duck
+ 6:Daisy;Duck
+ 7:Gustav;Duck
+ 8:Dussel;Duck
+ 9:Oma Dorette;Duck
+10:Franz;Gans
+----
++
+.Lösung
+[%collapsible]
+====
+[source,java]
+----
+include::{sourcedir}/files/Bsp002.java[tag=solution,indent=0]
+----
+
+====
+
+'''
+
+* files.Bsp003: Schreiben einer Datei aus einem String heraus
+
+** Erstelle eine Java-Klasse `Bsp003.java` im package `at.htl.lego.solution.files`.
+
+** Erstelle eine Methode `writeTextFile` die einen *String* als Parameter entgegennimmt und den Inhalt des Strings in eine Datei `my-file.txt` im Project-Root schreibt.
+
+** Bildschirmausgabe:
++
+----
+Wrote 10 lines to file 'my-file.txt'
+----
++
+.Lösung
+[%collapsible]
+====
+[source,java]
+----
+include::{sourcedir}/files/Bsp003.java[tag=solution,indent=0]
+----
+
+====
+
+
+
+
+'''
+
+* files.Bsp004: Schreiben einer Datei aus einem String-Array heraus
+
+** Erstelle eine Java-Klasse `Bsp004.java` im package `at.htl.lego.solution.files`.
+
+** Erstelle eine Methode `writeTextFile` die ein *String-Array* als Parameter entgegennimmt und den Inhalt des Strings in eine Datei `my-file.txt` im Project-Root schreibt.
+
+** Bildschirmausgabe:
++
+----
+Wrote 10 lines to file 'my-file.txt'
+----
++
+.Lösung
+[%collapsible]
+====
+[source,java]
+----
+include::{sourcedir}/files/Bsp004.java[tag=solution,indent=0]
+----
+
+====
+
+
+
+
+
+
+=== Erstellen von Pfaden
+
+* files.Bsp005: Erstelle ein Pfad-Objekt das auf die `pom.xml` im Root des Projektfolders verweist. Anschließend wird die `pom.xml` in einen existierenden Folder `files` kopiert und in `pom-copy.xml` umbenannt.
+
+** Verwende hierzu `Paths.get(...)`
+
+** Sowie `System.getProperty("user.dir")`
++
+NOTE: Um Probleme mit den File-Separatoren in den verschiedenen Betriebssystemen zu vermeiden, kann man einen Pfad mit `Paths.get(...)` erstellen in dem die einzelnen Verzeichnisse und Dateien als Strings übergeben werden. Dieser Pfad ist dann unabhängig vom Betriebssystem.
++
+.Lösung
+[%collapsible]
+====
+[source,java]
+----
+include::{sourcedir}/files/Bsp005.java[tag=solution,indent=0]
+----
+====
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== Objektorientierung Grundlagen
+
+* OOFundBsp01:
+Erstellen Sie eine Klasse `Vehicle` sowie zwei Unterklassen `Truck` and `PassengerCar` mit folgenden Attributen:
+** `Vehicle`
+*** brand
+*** model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+.Programmablaufplan
+[xxx%collapsible]
+====
+image::https://www.plantuml.com/plantuml/png/ZPBDZjCm4CVlVefXJwq4PVb0GYsBjeYFtGj2eENkn9DajCuuiiTKubauyWnxufONmoIjoQgYuMZD__VxZpI-3AAznDQg1vtNTQiX1loANgZKzhe2nsf8gFMxDTIuexAHpVZm3aF0ZQ8A5aLBy0gUl5ozM88qoB0G7t6f0DPfz5aBSGqNS7R3WdwlETiej07_uazdu8_Ejzh-YtvsVfhkVnIv-Z5yylrFRQXpWKI7OzdCAjkCmk8zYbYaWkfR95d21wyDN1yfdv__jt8q71IZuFL5CYHg5XivDbGf5NOaPRF8m5AL-ezmUePXa-qQRhe0Z-0B8JIwG8PfPhNPW_a4KpBrIhI47XzE-1oz9pXrXOFlodMTjlhUDbCk3OmESDlVCGj2qTybCx91pZNpzpcKRPCmShql2yG6gWoiu6qoxCYRkPPHcgrNP2jCpZT8S9o2jlyL0l9GQJnndRomIm699-nPFt25rx5iaiHWHKn2to2uoda194Q6hVykoPNCuozGGLodBjCxjlOt[]
+====
+////
+
+
+
+
+
+----
+ __      ___      _    _____                     _
+ \ \    / (_)    | |  / ____|                   | |
+  \ \  / / _  ___| | | (___  _ __   __ _ ___ ___| |
+   \ \/ / | |/ _ \ |  \___ \| '_ \ / _` / __/ __| |
+    \  /  | |  __/ |  ____) | |_) | (_| \__ \__ \_|
+     \/   |_|\___|_| |_____/| .__/ \__,_|___/___(_)
+                            | |
+                            |_|
+----
