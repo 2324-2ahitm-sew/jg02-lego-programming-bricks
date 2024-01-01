@@ -80,9 +80,9 @@ B
 
 ** Wenn man sich dieses Repository bereits auf den eigenen Rechner gecloned hat möchte man vielleicht neue Beispielsangaben herunterladen, dh man möchte das lokale Repo aktualisieren, ohne die eigenen Beispiele zu verlieren
 
-** Seit 1. Jänner 2024 wurde die Funktionsweise von github-classroom geändert. Die Repos für die Schüler werden nun nicht mehr aus einem Template-Repo erstellt, sondern aus einem Fork des Repos.
+** Ab Jänner 2024 wird die Funktionsweise von github-classroom geändert (genaues Datum derzeit unbekannt). Die Repos für die Schüler werden dann nicht mehr aus einem Template-Repo erstellt, sondern aus einem Fork des Repos.
 
-** Dieser Fork kann nun einfacher mit dem Original-Repo synchronisiert werden -> https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork[GitHub-Dokumentation - Einen Fork synchronisieren^]
+** [.line-through]#Dieser Fork kann nun einfacher mit dem Original-Repo synchronisiert werden -> https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork[GitHub-Dokumentation - Einen Fork synchronisieren^]#
 
 
 == Lego-Programmier-Bausteine
