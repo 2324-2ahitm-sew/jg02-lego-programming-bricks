@@ -403,44 +403,12 @@ image::http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubuse
 endif::[]
 
 ifndef::env-github[]
-[plantuml,vehicle-truck-passengercar-cld,png]
-----
-@startuml
-include::plantuml/vehicle-truck-passengercar-cld.puml[]
-@enduml
-----
+image::images/vehicle-truck-passengercar-cld.svg[]
 endif::[]
 
 
 
-++++
-<!--
-@startuml my-cld
 
-class Vehicle {
-  - brand: String
-  - model: String
-}
-
-class Truck {
-  - maxPayload: int
-}
-
-class PassengerCar {
-  - maxPassengers: int
-}
-
-Vehicle <|-- Truck
-Vehicle <|-- PassengerCar
-
-@enduml
--->
-<div class="imageblock">
-<div class="content">
-<img src="my-cld.svg" alt="Company Logo">
-</div>
-</div>
-++++
 
 
 
