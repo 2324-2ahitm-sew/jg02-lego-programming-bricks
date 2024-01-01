@@ -1,0 +1,19 @@
+@startuml
+
+class Vehicle {
+  - brand: String
+  - model: String
+}
+
+class Truck {
+  - maxPayload: int
+}
+
+class PassengerCar {
+  - maxPassengers: int
+}
+
+Vehicle <|-- Truck
+Vehicle <|-- PassengerCar
+
+@enduml
