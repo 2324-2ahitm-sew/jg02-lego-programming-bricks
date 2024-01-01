@@ -17,7 +17,12 @@ jobs:
         run: sudo apt-get install plantuml
 
       - name: Render PlantUML diagrams
-        run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml -o vehicle-truck-passengercar-cld.svg
+        run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml -o images/vehicle-truck-passengercar-cld.svg
 
-      - name: Save generated image
-        run: mv vehicle-truck-passengercar-cld.svg images/vehicle-truck-passengercar-cld.svg
+      - name: Push generated image
+        run: |
+          cd images
+          ls -lah
+          git add vehicle-truck-passengercar-cld.svg
+          git commit -m "Update generated image"
+          git push origin main
