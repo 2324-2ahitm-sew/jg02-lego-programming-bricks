@@ -1,0 +1,23 @@
+name: Render PlantUML diagrams
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  render-plantuml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install PlantUML
+        run: sudo apt-get install plantuml
+
+      - name: Render PlantUML diagrams
+        run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml -o vehicle-truck-passengercar-cld.svg
+
+      - name: Save generated image
+        run: vehicle-truck-passengercar-cld.svg images/vehicle-truck-passengercar-cld.svg

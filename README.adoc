@@ -399,11 +399,16 @@ Erstellen Sie eine Klasse `Vehicle` sowie zwei Unterklassen `Truck` and `Passeng
 *** maxPassengers
 
 ifdef::env-github[]
-image::http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/2324-2ahitm-sew/jg02-lego-programming-bricks/main/plantuml/vehicle-truck-passengercar-cld.puml?token=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[]
+image::vehicle-truck-passengercar-cld.svg[]
 endif::[]
 
 ifndef::env-github[]
-image::images/vehicle-truck-passengercar-cld.svg[]
+[plantuml,vehicle-truck-passengercar-cld,png]
+----
+@startuml
+include::plantuml/vehicle-truck-passengercar-cld.puml[]
+@enduml
+----
 endif::[]
 
 
