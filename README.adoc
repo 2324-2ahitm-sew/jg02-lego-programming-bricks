@@ -354,6 +354,7 @@ endif::[]
 +
 NOTE: Um Probleme mit den File-Separatoren in den verschiedenen Betriebssystemen zu vermeiden, kann man einen Pfad mit `Paths.get(...)` erstellen in dem die einzelnen Verzeichnisse und Dateien als Strings übergeben werden. Dieser Pfad ist dann unabhängig vom Betriebssystem.
 +
+ifndef::env-github[]
 .Lösung
 [%collapsible]
 ====
@@ -362,7 +363,9 @@ NOTE: Um Probleme mit den File-Separatoren in den verschiedenen Betriebssystemen
 include::{sourcedir}/files/Bsp005.java[tag=solution,indent=0]
 ----
 ====
+endif::[]
 
+'''
 
 
 
@@ -453,7 +456,7 @@ endif::[]
 
 ** Ergänzen Sie die Klasse character um Konstruktoren, getter, setter und eine toString()-Methode.
 
-** Es sit ein String gegeben:
+** Es ist ein String gegeben:
 +
 [source,java]
 ----
@@ -467,7 +470,7 @@ final String CSV_LINE = "Donald;Duck";
 Character parseCsv(String csvLine)
 ----
 +
-die einen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgibt.
+die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgibt.
 
 ** In der  `main`-Methode der Klasse `Bsp002` wird die Methode aufgerufen und das Objekt in der Console ausgegeben.
 
