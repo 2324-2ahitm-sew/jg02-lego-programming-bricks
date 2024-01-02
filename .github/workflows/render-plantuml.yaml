@@ -16,16 +16,16 @@ jobs:
           sudo apt-get install tree
 
       - name: Render PlantUML diagrams
-        run: plantuml -tsvg plantuml/vehicle-truck-passengercar-cld.puml
+        run: plantuml -tsvg plantuml/*.puml
 
       - name: Push generated image
         run: |
           tree
-          mv plantuml/vehicle-truck-passengercar-cld.svg images/
+          mv plantuml/*.svg images/
           cd images
           ls -lah
           git config --global user.name 'htl-leonding'
           git config --global user.email 't.stuetz@htl-leonding.ac.at'
-          git add vehicle-truck-passengercar-cld.svg
-          git commit -m "Update generated image"
+          git add *.svg
+          git commit -m "Update generated image(s)"
           git push origin main

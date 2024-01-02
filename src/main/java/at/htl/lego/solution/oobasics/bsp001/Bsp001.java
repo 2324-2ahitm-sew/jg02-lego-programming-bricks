@@ -1,6 +1,6 @@
 package at.htl.lego.solution.oobasics.bsp001;
 
-public class Main {
+public class Bsp001 {
     public static void main(String[] args) {
         Vehicle[] vehicles = new Vehicle[4];
         vehicles[0] = new Truck("Opel", "Blitz", 3000);
