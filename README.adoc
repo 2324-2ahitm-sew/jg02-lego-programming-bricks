@@ -433,18 +433,43 @@ PassengerCar
 PassengerCar
 ----
 
+'''
 
+* Bsp002:
+Erstellen Sie eine Klasse `Character` mit folgenden Attributen:
++
+ifdef::env-github[]
+image::character-cld.svg[]
+endif::[]
 
+ifndef::env-github[]
+[plantuml,character-cld,png]
+----
+@startuml
+include::plantuml/character-cld.puml[]
+@enduml
+----
+endif::[]
 
+** Ergänzen Sie die Klasse character um Konstruktoren, getter, setter und eine toString()-Methode.
 
+** Es sit ein String gegeben:
++
+[source,java]
+----
+final String CSV_LINE = "Donald;Duck";
+----
 
+** Erstellen Sie eine Methode
++
+[source,java]
+----
+Character parseCsv(String csvLine)
+----
++
+die einen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgibt.
 
-
-
-
-
-
-
+** In der  `main`-Methode der Klasse `Bsp002` wird die Methode aufgerufen und das Objekt in der Console ausgegeben.
 
 
 
