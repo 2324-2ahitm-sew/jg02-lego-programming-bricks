@@ -510,10 +510,11 @@ endif::[]
 
 :youtube-id: haaJN5gewZA
 :yt-playlist-id: PLgZuSc7xewdeUFKlT_hVgcpbPVIzkUTmL
+:yt-playlist-index: 27
 
 .Konstruktor - Objektorientierte Programmierung in Java 3
 ifdef::env-github[]
-image:https://img.youtube.com/vi/{youtube-id}[]/maxresdefault.jpg[link=https://youtu.be/{youtube-id}&list={yt-playlist-id}&index=3]
+image:https://img.youtube.com/vi/{youtube-id}/maxresdefault.jpg[link=https://youtu.be/{youtube-id}&list={yt-playlist-id}&index={yt-playlist-index}]
 endif::[]
 
 ifndef::env-github[]
