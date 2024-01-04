@@ -480,7 +480,7 @@ die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgi
 
 .Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1
 ifdef::env-github[]
-image:https://img.youtube.com/vi/xmSGwipW6NQ/maxres0.jpg[link=https://youtu.be/xmSGwipW6NQ&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=1]
+image:https://img.youtube.com/vi/xmSGwipW6NQ/maxresdefault.jpg[link=https://youtu.be/xmSGwipW6NQ&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=1]
 endif::[]
 //https://stackoverflow.com/questions/12788287/how-to-get-hq-youtube-thumbnails
 
