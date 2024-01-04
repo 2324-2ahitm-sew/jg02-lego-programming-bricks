@@ -479,7 +479,13 @@ die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgi
 * Bsp003: Erstellen eines Objekts
 
 .Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1
+ifdef::env-github[]
+image:https://img.youtube.com/vi/xmSGwipW6NQ/maxresdefault.jpg[link=https://youtu.be/xmSGwipW6NQ]
+endif::[]
+
+ifndef::env-github[]
 video::xmSGwipW6NQ[youtube]
+endif::[]
 
 .Erste eigene Klasse - Objektorientierte Programmierung in Java Teil 2
 ifdef::env-github[]
