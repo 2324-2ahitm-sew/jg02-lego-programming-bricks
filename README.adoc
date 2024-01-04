@@ -480,30 +480,37 @@ die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgi
 
 .Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1
 ifdef::env-github[]
-image:https://img.youtube.com/vi/xmSGwipW6NQ/maxresdefault.jpg[link=https://youtu.be/xmSGwipW6NQ&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=1]
+image:https://img.youtube.com/vi/xmSGwipW6NQ/maxresdefault.jpg[link=https://youtu.be/xmSGwipW6NQ&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=1&t=10]
 endif::[]
 //https://stackoverflow.com/questions/12788287/how-to-get-hq-youtube-thumbnails
 
 ifndef::env-github[]
-video::xmSGwipW6NQ[youtube]
+//video::xmSGwipW6NQ[youtube]
+https://youtu.be/xmSGwipW6NQ&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=1&t=10[Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1^]
 endif::[]
+
+
 
 .Erste eigene Klasse - Objektorientierte Programmierung in Java Teil 2
 ifdef::env-github[]
-image:https://i.ytimg.com/vi/P9TRlsyq7gc/maxresdefault.jpg[link=https://youtu.be/P9TRlsyq7gc&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=2]
+image:https://i.ytimg.com/vi/P9TRlsyq7gc/maxresdefault.jpg[link=https://youtu.be/P9TRlsyq7gc&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=2&t=10]
 endif::[]
 
 ifndef::env-github[]
-video::P9TRlsyq7gc[youtube]
+//video::P9TRlsyq7gc[youtube]
+https://youtu.be/P9TRlsyq7gc&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=2&t=10[YouTube: Erste eigene Klasse - Objektorientierte Programmierung in Java Teil 2^]
 endif::[]
+
+
 
 .Konstruktor - Objektorientierte Programmierung in Java 3
 ifdef::env-github[]
-image:https://img.youtube.com/vi/FKdxjjNdCYM/maxresdefault.jpg[link=https://youtu.be/FKdxjjNdCYM&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=3]
+image:https://img.youtube.com/vi/FKdxjjNdCYM/maxresdefault.jpg[link=https://youtu.be/FKdxjjNdCYM&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=3&t=10]
 endif::[]
 
 ifndef::env-github[]
-video::FKdxjjNdCYM[youtube,list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_]
+//video::FKdxjjNdCYM[youtube]
+https://youtu.be/FKdxjjNdCYM&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=3&t=10[YouTube: Konstruktor - Objektorientierte Programmierung in Java 3^]
 endif::[]
 
 
@@ -514,11 +521,12 @@ endif::[]
 
 .Konstruktor - Objektorientierte Programmierung in Java 3
 ifdef::env-github[]
-image:https://img.youtube.com/vi/{youtube-id}/maxresdefault.jpg[link=https://youtu.be/{youtube-id}&list={yt-playlist-id}&index={yt-playlist-index}^]
+image:https://img.youtube.com/vi/{youtube-id}/maxresdefault.jpg[link=https://youtu.be/{youtube-id}&list={yt-playlist-id}&index={yt-playlist-index}&t=10]
 endif::[]
 
 ifndef::env-github[]
-video::{youtube-id}[youtube,list={yt-playlist-id}^]
+//video::{youtube-id}[youtube,list={yt-playlist-id}^]
+https://youtu.be/{youtube-id}&list={yt-playlist-id}&index={yt-playlist-index}&t=10[YouTube: Konstruktor - Objektorientierte Programmierung in Java 3^]
 endif::[]
 
 
