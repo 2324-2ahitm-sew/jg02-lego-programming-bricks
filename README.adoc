@@ -514,11 +514,11 @@ endif::[]
 
 .Konstruktor - Objektorientierte Programmierung in Java 3
 ifdef::env-github[]
-image:https://img.youtube.com/vi/{youtube-id}/maxresdefault.jpg[link=https://youtu.be/{youtube-id}&list={yt-playlist-id}&index={yt-playlist-index}]
+image:https://img.youtube.com/vi/{youtube-id}/maxresdefault.jpg[link=https://youtu.be/{youtube-id}&list={yt-playlist-id}&index={yt-playlist-index}^]
 endif::[]
 
 ifndef::env-github[]
-video::{youtube-id}[youtube,list={yt-playlist-id}]
+video::{youtube-id}[youtube,list={yt-playlist-id}^]
 endif::[]
 
 
