@@ -480,7 +480,7 @@ die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgi
 
 .Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1
 ifdef::env-github[]
-image:https://img.youtube.com/vi/xmSGwipW6NQ/maxresdefault.jpg[link=https://youtu.be/xmSGwipW6NQ]
+image:https://img.youtube.com/vi/xmSGwipW6NQ/maxres0.jpg[link=https://youtu.be/xmSGwipW6NQ&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=1]
 endif::[]
 
 ifndef::env-github[]
@@ -489,7 +489,7 @@ endif::[]
 
 .Erste eigene Klasse - Objektorientierte Programmierung in Java Teil 2
 ifdef::env-github[]
-image:https://img.youtube.com/vi/P9TRlsyq7gc/maxresdefault.jpg[link=https://youtu.be/P9TRlsyq7gc]
+image:https://img.youtube.com/vi/P9TRlsyq7gc/maxres2.jpg[link=https://youtu.be/P9TRlsyq7gc&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=2]
 endif::[]
 
 ifndef::env-github[]
