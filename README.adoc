@@ -482,10 +482,13 @@ die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgi
 video::xmSGwipW6NQ[youtube]
 
 .Erste eigene Klasse - Objektorientierte Programmierung in Java Teil 2
+ifdef::env-github[]
+image:https://img.youtube.com/vi/P9TRlsyq7gc/maxresdefault.jpg[link=https://youtu.be/P9TRlsyq7gc]
+endif::[]
 
+ifndef::env-github[]
 video::P9TRlsyq7gc[youtube]
-
-
+endif::[]
 
 
 
