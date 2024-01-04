@@ -476,17 +476,15 @@ die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgi
 
 '''
 
-* Bsp002: Erstellen eines Objekts
+* Bsp003: Erstellen eines Objekts
 
 .Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1
-++++
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmSGwipW6NQ?si=-3I4_4X1qvxITFL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-++++
+video::xmSGwipW6NQ[]
 
 .Erste eigene Klasse - Objektorientierte Programmierung in Java Teil 2
-++++
-<iframe width="560" height="315" src="https://www.youtube.com/embed/P9TRlsyq7gc?si=Uk6igaq5P5-9PUSh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-++++
+
+video::P9TRlsyq7gc[]
+
 
 
 
