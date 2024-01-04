@@ -479,11 +479,11 @@ die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgi
 * Bsp003: Erstellen eines Objekts
 
 .Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1
-video::xmSGwipW6NQ[]
+video::xmSGwipW6NQ[youtube]
 
 .Erste eigene Klasse - Objektorientierte Programmierung in Java Teil 2
 
-video::P9TRlsyq7gc[]
+video::P9TRlsyq7gc[youtube]
 
 
 
