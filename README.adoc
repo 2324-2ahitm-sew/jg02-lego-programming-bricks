@@ -496,7 +496,14 @@ ifndef::env-github[]
 video::P9TRlsyq7gc[youtube]
 endif::[]
 
+.Konstruktor - Objektorientierte Programmierung in Java 3
+ifdef::env-github[]
+image:https://img.youtube.com/vi/P9TRlsyq7gc/maxresdefault.jpg[link=https://youtu.be/FKdxjjNdCYM]
+endif::[]
 
+ifndef::env-github[]
+video::FKdxjjNdCYM[youtube]
+endif::[]
 
 
 
