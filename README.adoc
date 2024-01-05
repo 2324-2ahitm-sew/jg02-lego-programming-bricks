@@ -563,7 +563,10 @@ IQ = 3
 '''
 
 * Bsp004: Erstellen von Konstruktoren
-
++
+.YouTube-Videos
+[%collapsible]
+====
 .Konstruktor - Objektorientierte Programmierung in Java 3
 ifdef::env-github[]
 image:https://img.youtube.com/vi/FKdxjjNdCYM/maxresdefault.jpg[link=https://youtu.be/FKdxjjNdCYM&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=3&t=10]
@@ -590,6 +593,24 @@ ifndef::env-github[]
 https://youtu.be/{youtube-id}&list={yt-playlist-id}&index={yt-playlist-index}&t=10[YouTube: Konstruktor - Objektorientierte Programmierung in Java 3^]
 endif::[]
 
+====
++
+** Erstellen Sie die Klassen `Schueler` und `Schulhof`.
+** In der Klasse `Schulhof` wird die main-Methode erstellt.
+** Ergänzen Sie die Klasse Schüler mit einem Konstruktor, der die Attribute `name`, `alter` und `schulstufe` entgegennimmt.
+** Weiters fügen Sie der Klasse Schüler einen Default-Konstruktor hinzu.
+** In der main-Methode erstellen Sie drei Schüler, die folgende Billdschirmausgabe ergeben:
++
+----
+Jan, 17 Jahre, geht in die 12. Klasse!
+MrBizeps, 22 Jahre, geht in die 10. Klasse!
+Doerte, 15 Jahre, geht in die 9. Klasse!
+----
+
+** Was sind https://www.cool-lab.net/faq/was-sind-instanzvariablen-was-sind-klassenvariablen/[Instanzvariablen^]?
++
+Instanzvariablen gehören zu einer Instanz einer Klasse – also einem Objekt. Jedes Objekt verfügt über seine eigenen Instanzvariablen. Auf eine Instanzvariable v kann mit this.v zugegriffen werden. Falls keine Verwechslungsmöglichkeit mit einer lokalen Variable gleichen Namens besteht, kann man this auch weglassen.
+
 
 
 
@@ -603,6 +624,16 @@ image::https://www.plantuml.com/plantuml/png/ZPBDZjCm4CVlVefXJwq4PVb0GYsBjeYFtGj
 ////
 
 
+== Tooling
+
+* https://plantuml.com/de/[PlantUML^]
+* https://structorizer.fisch.lu[Structorizer^]
+
+
+== Sources
+
+* https://www.cool-lab.net/faqs-java/[FAQs Java^]
+* https://www.cool-lab.net/faqs-programmieren-lernen/[FAQs Programmieren lernen^]
 
 
 
