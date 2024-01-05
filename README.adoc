@@ -477,6 +477,10 @@ die diesen String im CSV-Format entgegennimmt und ein Character-Objekt zurückgi
 '''
 
 * Bsp003: Erstellen eines Objekts
++
+.YouTube-Videos
+[%collapsible]
+====
 
 .Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1
 ifdef::env-github[]
@@ -486,7 +490,7 @@ endif::[]
 
 ifndef::env-github[]
 //video::xmSGwipW6NQ[youtube]
-https://youtu.be/xmSGwipW6NQ&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=1&t=10[Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1^]
+https://youtu.be/xmSGwipW6NQ&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=1&t=10[Youtube: Objektorientierung in Java - Objektorientierte Programmierung in Java Teil 1^]
 endif::[]
 
 
@@ -501,7 +505,64 @@ ifndef::env-github[]
 https://youtu.be/P9TRlsyq7gc&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=2&t=10[YouTube: Erste eigene Klasse - Objektorientierte Programmierung in Java Teil 2^]
 endif::[]
 
+====
 
+
+** Erstellen Sie die Klassen `Schueler` und `Schulhof`
+** In der Klasse `Schulhof` wird die main-Methode erstellt
++
+[source,java]
+----
+public static void main(String[] args) {
+
+    Schueler eins = new Schueler();
+    eins.setName("Jan");
+    eins.setAlter(17);
+    eins.setSchulstufe(12);
+
+    System.out.printf("Hallo, ich bin %s!", eins.getName());
+
+    System.out.printf("%s, %d, geht in die %d. Schulstufe!"
+            , eins.getName()
+            , eins.getAlter()
+            , eins.getSchulstufe()
+    );
+
+    System.out.println();
+    System.out.println();
+
+    eins.setHunger(5);
+    eins.setIq(3);
+
+    eins.chillen();
+    System.out.println("IQ = " + eins.getIq());
+
+    eins.essen();
+    System.out.println("Hunger = " + eins.getHunger());
+
+    eins.lernen();
+    System.out.println("IQ = " + eins.getIq());
+
+}
+----
+
+** Bildschirmausgabe:
++
+----
+Hallo, ich bin Jan!Jan, 17, geht in die 12. Schulstufe!
+
+Jo Bro, ich chill hier!
+IQ = 2
+Ich ess jetzt was!
+Hunger = 4
+Ich lerne jetzt!
+IQ = 3
+----
+
+
+'''
+
+* Bsp004: Erstellen von Konstruktoren
 
 .Konstruktor - Objektorientierte Programmierung in Java 3
 ifdef::env-github[]
