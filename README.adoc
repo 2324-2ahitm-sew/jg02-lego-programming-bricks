@@ -506,8 +506,9 @@ https://youtu.be/P9TRlsyq7gc&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=2&t=1
 endif::[]
 
 ====
-
-
++
+IMPORTANT: Verwenden Sie Getter und Setter!
++
 ** Erstellen Sie die Klassen `Schueler` und `Schulhof`
 ** In der Klasse `Schulhof` wird die main-Methode erstellt
 +
@@ -567,6 +568,7 @@ IQ = 3
 .YouTube-Videos
 [%collapsible]
 ====
+
 .Konstruktor - Objektorientierte Programmierung in Java 3
 ifdef::env-github[]
 image:https://img.youtube.com/vi/FKdxjjNdCYM/maxresdefault.jpg[link=https://youtu.be/FKdxjjNdCYM&list=PLgZuSc7xewdd9_p_SeFQwJ3PfGJQh3vC_&index=3&t=10]
@@ -634,7 +636,7 @@ image::https://www.plantuml.com/plantuml/png/ZPBDZjCm4CVlVefXJwq4PVb0GYsBjeYFtGj
 
 * https://www.cool-lab.net/faqs-java/[FAQs Java^]
 * https://www.cool-lab.net/faqs-programmieren-lernen/[FAQs Programmieren lernen^]
-
+* https://www.youtube.com/playlist?list=PLO-P6W97sI0Q-o0oZy8NeUgi0s5WKK8IV[Jonas Keil - Programmieren lernen - Java Basics^]
 
 
 ----
