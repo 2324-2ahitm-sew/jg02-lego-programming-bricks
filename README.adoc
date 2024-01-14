@@ -601,7 +601,7 @@ endif::[]
 ** In der Klasse `Schulhof` wird die main-Methode erstellt.
 ** Ergänzen Sie die Klasse Schüler mit einem Konstruktor, der die Attribute `name`, `alter` und `schulstufe` entgegennimmt.
 ** Weiters fügen Sie der Klasse Schüler einen Default-Konstruktor hinzu.
-** In der main-Methode erstellen Sie drei Schüler, die folgende Billdschirmausgabe ergeben:
+** In der main-Methode erstellen Sie drei Schüler, die folgende Bildschirmausgabe ergeben:
 +
 ----
 Jan, 17 Jahre, geht in die 12. Klasse!
