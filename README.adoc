@@ -615,6 +615,183 @@ Instanzvariablen gehören zu einer Instanz einer Klasse – also einem Objekt. J
 
 
 
+=== Collections
+
+==== Lists
+
+* Listen bestehen aus Elementen
+* Diese Elemente haben immer einen Datentyp. Entweder eine
+** Wrapper-Klasse eines Primitivdatentyps (zB Integer für int) oder einen
+** Referenztyp wie zB String oder ein Array und weiters
+** Objekttypen, wie zB Person, Kfz, Tier, ...
+* Die CRUD-Methoden (create, read, update und delete) sind bei Listen:
+
+.CRUD-Methoden
+|===
+|Methode |Anwendung
+
+|`add(T element)`
+|Hinzufügen eines Elements zur Liste
+
+|`get(int index)`
+|Lesen eines Elements der Liste
+
+|`remove(int index)` oder `remove(Object o)`
+|Entfernen eines Objects entweder anhand des index oder anhand des Inhalts des Elements
+
+|`set(int index, T element)`
+|ersetzt das Element an der Position `index` mit dem Element `element`
+|===
+
+IMPORTANT: Listen haben noch viele weitere Methoden wie in der  https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html#method-summary[JavaDoc des JDK 21^] ersichtlich ist.
+
+* Erstellen von Listen:
+
+|===
+|Code |Erläuterung
+
+a|
+[source,java]
+----
+List<String> names = new ArrayList<>();
+----
+|Erstellen einer leeren Liste
+
+a|
+[source,java]
+----
+List<String> names = List.of("Donald",
+                             "Dagobert",
+                             "Tick",
+                             "Trick",
+                             "Track"
+                           );
+----
+|Erstellen einer Liste mit mehreren Elementen
+|===
+
+
+* Bsp001: Erstellen Sie eine Liste mit Strings und befüllen Sie diese mit String Objekten
+
+** Erstellen Sie zunächst eine Klasse `ListMgr`
+** In dieser Klasse erstellen Sie die main-Methode
+** Erstellen Sie folgende Methoden:
++
+image::collections-bsp001-methods.png[]
+
+*** Bei den delete-Methoden wird true zurückgegeben, wenn das element gelöscht werden konnte, ansonsten false.
++
+.Beachten Sie beim Löschen!
+image::list-remove-javadoc.png[]
+
+
+** Instanzieren Sie einen ListMgr und erstellen eine Liste von Personen.
++
+image::collections-bsp001-add-elements.png[]
++
+image::collections-bsp001-add-element.png[]
+
+
+.main-Methode
+[%collapsible]
+====
+[source,java]
+----
+public static void main(String[] args) {
+
+    ListMgr personen = new ListMgr();
+
+    personen.create("Anna","Berta", "Cäsar", "Dora", "Emil", "Fridolin", "Gustav", "Heinrich", "Ida", "Julius");
+    System.out.println(personen.list);
+    personen.create("Konrad");
+    System.out.println(personen.list);
+
+    System.out.println("\nLesen von index 25");
+    if (personen.read(25) == null) {
+        System.out.println("An der Stelle 25 gibt es keinen Eintrag zum Lesen");
+    }
+
+    System.out.println("\nLesen von index 5");
+    System.out.println(personen.read(5));
+
+    System.out.println("\nUpdate von index 25");
+    if (!personen.update(25, "Xaver")) {
+        System.out.println("An der Stelle 25 gibt es keinen Eintrag zum Updaten");
+    }
+
+    System.out.println("\nUpdate von index 5");
+    personen.update(5, "Friedrich");
+    System.out.println(personen.list);
+
+    System.out.println("\nLöschen von Friedrich");
+    personen.delete("Friedrich");
+    System.out.println(personen.list);
+
+    System.out.println("\nLöschen von index 2-5");
+    personen.delete(2, 5);
+    System.out.println(personen.list);
+
+    System.out.println("\nLöschen von index 25-27");
+    if (!personen.delete(25, 27)) {
+        System.out.println("Die Liste hat nicht so viele Einträge zum Löschen");
+    }
+    System.out.println(personen.list);
+
+    System.out.println("\nLöschen von index 4 - 7");
+    if (!personen.delete(4, 7)) {
+        System.out.println("Die Liste hat nicht so viele Einträge zum Löschen");
+    }
+    System.out.println(personen.list);
+
+}
+----
+====
+
+.Bildschirmausgabe
+[%collapsible]
+====
+----
+Hinzufügen von 10 Personen
+[Anna, Berta, Cäsar, Dora, Emil, Fridolin, Gustav, Heinrich, Ida, Julius]
+
+Hinzufügen von 1 Person
+[Anna, Berta, Cäsar, Dora, Emil, Fridolin, Gustav, Heinrich, Ida, Julius, Konrad]
+
+Lesen von index 25
+An der Stelle 25 gibt es keinen Eintrag zum Lesen
+
+Lesen von index 5
+Fridolin
+
+Update von index 25
+An der Stelle 25 gibt es keinen Eintrag zum Updaten
+
+Update von index 5
+[Anna, Berta, Cäsar, Dora, Emil, Friedrich, Gustav, Heinrich, Ida, Julius, Konrad]
+
+Löschen von Friedrich
+[Anna, Berta, Cäsar, Dora, Emil, Gustav, Heinrich, Ida, Julius, Konrad]
+
+Löschen von index 2-5
+[Anna, Berta, Heinrich, Ida, Julius, Konrad]
+
+Löschen von index 25-27
+Die Liste hat nicht so viele Einträge zum Löschen
+[Anna, Berta, Heinrich, Ida, Julius, Konrad]
+
+Löschen von index 4 - 7
+Die Liste hat nicht so viele Einträge zum Löschen
+[Anna, Berta, Heinrich, Ida, Julius, Konrad]
+----
+====
+
+
+
+
+
+
+
+
 
 
 ////
