@@ -790,6 +790,52 @@ Die Liste hat nicht so viele Einträge zum Löschen
 
 
 
+* Bsp002: Erstellen Sie die CRUD-Methoden für ein Set von Autos (Klasse `Vehicle`) in einer Klasse `VehicleMgr`.
+
+** Die Klasse `Vehicle` hat folgende Attribute:
+*** brand
+*** model
+
+** Verwenden Sie das Interface https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Set.html[`Set`^] und die Implementierung `HashSet` für das Set;
+
+** Dokumentieren Sie in einem Asciidoctor-Dokument "Collections.adoc" die benötigten Methoden.
+
+
+
+
+
+
+* Bsp003: Erstellen Sie die CRUD-Methoden für eine Map von Fussballern (Klasse `Player`) in einer Klasse `SoccerMgr`.
+
+** Die Klasse `Player` hat folgende Attribute:
+*** playersNumber (Trikotnummer)
+*** firstName
+*** lastName
+
+** Verwenden Sie das Interface https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html[`Map`^] und die Implementierung `HashMap` für die Map;
+
+** Dokumentieren Sie in einem Asciidoctor-Dokument "Collections.adoc" die benötigten Methoden.
+
+
+
+* Bsp004: Erstellen Sie einen Stapel von Karten (Klasse `Card`) in einer Klasse `CardStack`.
+
+** Verwenden Sie das Interface https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html[`List`^] und die Implementierung `LinkedList` für den Stack;
+
+** Verwenden Sie dabei folgende Methoden:
++
+image::stack.png[]
+
+** Für die Kartenfarben (hearts, diamonds, spades, clubs) verwenden Sie eine Enumeration, ebenso für die Kartenwerte (Jack (Unter), Queen (Ober), King, Ace, Ten).
+
+** Die Klasse `Card` hat folgende Attribute:
+*** cardColor
+*** cardValue
+
+** In der main-Methode werden 20 Karten erstellt und auf den Stapel gelegt.
+** Anschließend werden die Karten gemischt und eine nach der anderen vom Stapel genommen und in der Console ausgegeben.
+
+
 
 
 
@@ -801,6 +847,9 @@ Die Liste hat nicht so viele Einträge zum Löschen
 image::https://www.plantuml.com/plantuml/png/ZPBDZjCm4CVlVefXJwq4PVb0GYsBjeYFtGj2eENkn9DajCuuiiTKubauyWnxufONmoIjoQgYuMZD__VxZpI-3AAznDQg1vtNTQiX1loANgZKzhe2nsf8gFMxDTIuexAHpVZm3aF0ZQ8A5aLBy0gUl5ozM88qoB0G7t6f0DPfz5aBSGqNS7R3WdwlETiej07_uazdu8_Ejzh-YtvsVfhkVnIv-Z5yylrFRQXpWKI7OzdCAjkCmk8zYbYaWkfR95d21wyDN1yfdv__jt8q71IZuFL5CYHg5XivDbGf5NOaPRF8m5AL-ezmUePXa-qQRhe0Z-0B8JIwG8PfPhNPW_a4KpBrIhI47XzE-1oz9pXrXOFlodMTjlhUDbCk3OmESDlVCGj2qTybCx91pZNpzpcKRPCmShql2yG6gWoiu6qoxCYRkPPHcgrNP2jCpZT8S9o2jlyL0l9GQJnndRomIm699-nPFt25rx5iaiHWHKn2to2uoda194Q6hVykoPNCuozGGLodBjCxjlOt[]
 ====
 ////
+
+
+
 
 
 == Tooling
